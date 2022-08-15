@@ -1,0 +1,29 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  &_auth {
+    width: 100%;
+    background: var(--shades-2);
+    border-top: 1px solid var(--shades-6);
+    padding: 12px 46px 12px 28px;
+    display: flex;
+    justify-content: space-between;
+    .btn_next {
+      display: flex;
+      align-items: center;
+      .button_wrapper {
+        &:nth-child(1) {
+          margin-right: 32px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 100%;
+          color: #676767;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+@import "../../../common.scss";
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 48px;
+    height: 56px;
+    background: var(--main-blue);
+
+    &.first-page {
+      justify-content: center;
+    }
+
+    .logo {
+      width: 119.13px;
+      height: 16px;
+      background: url("../../../assets/icons/Logo.svg") 0 0 / contain no-repeat;
+      background-position: center;
+    }
+
+    .percent {
+      @include Roboto(20px, var(--main-yellow), 700, 120%);
+    }
+
+    .exit {
+      display: flex;
+      align-items: center;
+      background: var(--shades-10);
+      border: 1px solid var(--shades-12);
+      box-shadow: 1px 1px 0px var(--secondary-dark-blue);
+      border-radius: 4px;
+      padding: 11px 8px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &_text {
+        @include Montserrat(14px, var(--shades-8), 700, 120%);
+        margin-right: 6px;
+      }
+      &_icon {
+        width: 20px;
+        height: 20px;
+        background: url("../../../assets/icons/Exit.svg") 0 0 / contain no-repeat;
+        background-position: center;
+      }
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: space-between;
+
+      &_item {
+        padding: 7px 7px 7px 9px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+
+        &__icon {
+          width: 18px;
+          height: 18px;
+          background-position: center;
+          margin-right: 8px;
+        }
+
+        &__text {
+          color: var(--shades-8);
+        }
+      }
+    }
+
+    .profile {
+      display: flex;
+      &_messenger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16px;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+
+        &__icon {
+          width: 25px;
+          height: 25px;
+          background: url("../../../assets/icons/messenger.svg") 0 0 / contain no-repeat;
+          background-position: center;
+        }
+      }
+
+      &_notifications {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+        background: var(--shades-10);
+        border-radius: 50%;
+
+        &__icon {
+          width: 14px;
+          height: 14px;
+          position: relative;
+          background: url("../../../assets/icons/notifications.svg") 0 0 / contain no-repeat;
+          background-position: center;
+
+          .circle {
+            top: -3px;
+            right: -3px;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--secondary-5);
+          }
+        }
+      }
+
+      &_avatar {
+        display: flex;
+        align-items: center;
+
+        &__img {
+          width: 40px;
+          height: 40px;
+          margin-right: 7px;
+        }
+
+        &__arrow {
+          width: 10px;
+          height: 6px;
+          background: url("../../../assets/icons/arrowDown.svg") 0 0 / contain no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+  &_line {
+    width: 100%;
+    background-color: var(--shades-8);
+    height: 4px;
+    & > div {
+      background-color: var(--main-yellow);
+      height: 100%;
+    }
+  }
+}

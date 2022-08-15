@@ -1,0 +1,184 @@
+@import "../../../../common.scss";
+.button_wrapper {
+  //general button properties
+  .filled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background: var(--shades-9);
+    border-radius: 4px;
+    @include Montserrat(14px, var(--shades-8), 700, 100%);
+
+    &:hover {
+      cursor: pointer;
+      @include Montserrat(14px, var(--main-white), 700, 100%);
+    }
+  }
+  .filled-gray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background: var(--shades-1);
+    border-radius: 4px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
+    @include Montserrat(14px, var(--main-gray), 700, 100%);
+
+    &:hover {
+      cursor: pointer;
+      @include Montserrat(14px, var(--main-dark-gray), 700, 100%);
+    }
+  }
+  a {
+    &.filled {
+      text-decoration: none;
+    }
+  }
+  .text {
+    @include Montserrat(18px, var(--main-blue), 500, 150%);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .icon {
+    width: 16px;
+    height: 16px;
+
+    &_left {
+      margin-right: 6px;
+    }
+    &_right {
+      margin-left: 6px;
+    }
+  }
+  &.small {
+    .filled {
+      border: 1px solid var(--shades-12);
+    }
+  }
+  // color for medium and large filled buttons
+  &.medium,
+  &.large {
+    .filled {
+      color: var(--main-white);
+      border: none;
+      background: var(--main-blue);
+      &:hover {
+        cursor: pointer;
+        background: var(--shades-9);
+      }
+    }
+  }
+
+  //height and padding
+  &.small {
+    .filled {
+      height: 32px;
+      padding: 8.5px 8px 9.5px;
+      @include phone() {
+        height: 34px;
+        padding: 9px 8px;
+      }
+    }
+
+    .filled-gray {
+      height: 32px;
+      padding: 8.5px 8px 9.5px;
+      @include phone() {
+        height: 34px;
+        padding: 9px 8px;
+      }
+    }
+
+    &.icon {
+      .filled {
+        height: 36px;
+        padding: 8px;
+        @include phone() {
+          height: 32px;
+        }
+      }
+
+      .filled-gray {
+        height: 36px;
+        padding: 8px;
+        @include phone() {
+          height: 32px;
+        }
+      }
+    }
+  }
+  &.medium {
+    .filled {
+      padding: 10px 12px 12px;
+      height: 36px;
+      @include phone() {
+        height: 38px;
+      }
+    }
+
+    .filled-gray {
+      padding: 10.5px 8px 11.5px;
+      height: 36px;
+      @include phone() {
+        padding: 11px 8px;
+        height: 38px;
+      }
+    }
+
+    &.icon {
+      .filled {
+        padding: 9.5px 12px 10.5px;
+        height: 40px;
+        @include phone() {
+          height: 36px;
+        }
+      }
+
+      .filled-gray {
+        padding: 9.5px 8px 10.5px;
+        height: 40px;
+        @include phone() {
+          padding: 10px 8px;
+          height: 36px;
+        }
+      }
+    }
+  }
+  &.large {
+    .filled {
+      padding: 14.5px 16px 15.5px 20px;
+      height: 44px;
+      @include phone() {
+        height: 46px;
+      }
+    }
+
+    .filled-gray {
+      padding: 14.5px 20px 15.5px 16px;
+      height: 44px;
+      @include phone() {
+        height: 46px;
+      }
+    }
+
+    &.icon {
+      .filled {
+        padding: 13.5px 16px 14.5px 20px;
+        height: 48px;
+        @include phone() {
+          height: 44px;
+        }
+      }
+
+      .filled-gray {
+        padding: 13.5px 20px 14.5px 16px;
+        height: 48px;
+        @include phone() {
+          height: 44px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "git.ignoreMissingGitWarning": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "files.defaultLanguage": "html",
+  "workbench.editor.tabSizing": "shrink",
+  "editor.fontSize": 10,
+  "editor.tabSize": 2,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.quickSuggestionsDelay": 10,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.tabCompletion": "on",
+  "editor.suggest.localityBonus": true,
+  "editor.wordBasedSuggestions": true,
+  "editor.parameterHints": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.formatOnSave": true,
+  "editor.rulers": [80, 80],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "terminal.integrated.fontSize": 12,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Material Theme Darker",
+  "eslint.alwaysShowStatus": true,
+  "prettier.singleQuote": true,
+  "eslint.autoFixOnSave": true,
+  "css.lint.duplicateProperties": "error",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#00BCD4",
+    "list.activeSelectionForeground": "#00BCD4",
+    "list.inactiveSelectionForeground": "#00BCD4",
+    "list.highlightForeground": "#00BCD4",
+    "scrollbarSlider.activeBackground": "#00BCD450",
+    "editorSuggestWidget.highlightForeground": "#00BCD4",
+    "textLink.foreground": "#00BCD4",
+    "progressBar.background": "#00BCD4",
+    "pickerGroup.foreground": "#00BCD4",
+    "tab.activeBorder": "#00BCD4",
+    "notificationLink.foreground": "#00BCD4",
+    "editorWidget.resizeBorder": "#00BCD4",
+    "editorWidget.border": "#00BCD4",
+    "settings.modifiedItemIndicator": "#00BCD4",
+    "settings.headerForeground": "#00BCD4",
+    "panelTitle.activeBorder": "#00BCD4",
+    "breadcrumb.activeSelectionForeground": "#00BCD4",
+    "menu.selectionForeground": "#00BCD4",
+    "menubar.selectionForeground": "#00BCD4",
+    "editor.findMatchBorder": "#00BCD4",
+    "selection.background": "#00BCD440"
+  },
+  "materialTheme.accent": "Cyan",
+  "eslint.migration.2_x": "off",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 1,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "afterDelay"
+}

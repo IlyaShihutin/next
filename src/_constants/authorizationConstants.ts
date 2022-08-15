@@ -1,0 +1,1 @@
+export const titleList:string[] = ["Contact information", "Organization’s information", "Personal bio"];

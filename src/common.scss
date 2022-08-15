@@ -1,0 +1,75 @@
+// @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@mixin adaptive($max-width) {
+  @media screen and (max-width: #{$max-width}px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 834px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: 550px) {
+    @content;
+  }
+}
+@mixin Montserrat($size: 20px, $color: #2b2b2b, $weight: 500, $height: 150%) {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin Roboto($size: 20px, $color: #2b2b2b, $weight: 500, $height: 150%) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+//themes
+$text--light: black;
+$text--dark: white;
+$bg--light: white;
+$bg--dark: black;
+
+$themes: (
+  light: (
+    bg: $bg--light,
+    text: $text--light,
+  ),
+  dark: (
+    bg: $bg--dark,
+    text: $text--dark,
+  ),
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}

@@ -1,0 +1,42 @@
+@import "../../../../common.scss";
+.send_instuctions__page {
+  width: 533px;
+  margin: auto;
+  .plane {
+    margin: 0 auto;
+    width: 96px;
+    height: 96px;
+    background: url("../../../../assets/icons/paperPlane.svg") 0 0 / contain no-repeat;
+    background-position: center;
+    margin-bottom: 40px;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    p {
+      &:nth-child(1) {
+        @include Montserrat(32px, var(--main-dark-gray), 500, 120%);
+
+        margin-bottom: 12px;
+      }
+      &:nth-child(2) {
+        @include Roboto(20px, var(--main-gray), 500, 150%);
+
+        text-align: center;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .button_wrapper {
+      &:nth-child(1) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

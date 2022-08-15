@@ -1,0 +1,9 @@
+@import "../../../../common.scss";
+.link_wrapper {
+  a {
+    @include Montserrat(18px, var(--main-blue), 500, 150%);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

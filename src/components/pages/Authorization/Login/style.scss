@@ -1,0 +1,43 @@
+@import "../../../../common.scss";
+
+.login_page {
+  width: 452px;
+  margin: auto;
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    p {
+      &:nth-child(1) {
+        @include Montserrat(32px, var(--main-dark-gray), 500, 120%);
+        margin-bottom: 12px;
+      }
+      &:nth-child(2) {
+        @include Roboto(20px, var(--main-gray), 400, 150%);
+      }
+    }
+  }
+  .entry {
+    &_item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      .title {
+        @include Montserrat(24px, var(--main-dark-gray), 500, 120%);
+        margin-bottom: 16px;
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .button_wrapper {
+      &:nth-child(1) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
